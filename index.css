@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-[11px] xl:text-[13px] 2xl:text-[15px];
+}
+
+:root {
+    --federal-blue: #090560ff;
+    --oxford-blue: #0A1A39ff;
+    --risd-blue: #4046FFff;
+    --electric-indigo: #6133FFff;
+}
+
+
+@font-face {
+    font-family: agudaLight;
+    src: url(./public/fonts/aguda/Aguda-Light.ttf);
+}
+@font-face {
+    font-family: agudaRegular;
+    src: url(./public/fonts/aguda/Aguda-Regular.ttf);
+}
+@font-face {
+    font-family: agudaBold;
+    src: url(./public/fonts/aguda/Aguda-Bold.ttf);
+}
+@font-face {
+    font-family: agudaBlack;
+    src: url(./public/fonts/aguda/Aguda-Black.ttf);
+}
+
+
+
+.bg-anim {
+    animation:bg-anim-1 0.9s 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg-anim-1 {
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+.planet-1-boxshadow {
+    box-shadow: 0 0 20px #4b77b3,
+    0 0 40px #b3904b,
+    0 0 70px #4b77b3;
+    animation: planet-1-boxshadow-anim 1s 1s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes planet-1-boxshadow-anim {
+    to {
+        box-shadow: 0 0 20px #4b77b3,
+        0 0 40px #b3904b,
+        0 0 70px #4b77b3,
+        0 0 100px #4bb1b3,
+        0 0 200px #0150b4,
+        0 0 300px #0150b4,
+        0 0 400px #0150b4,
+        0 0 500px #0150b4,
+        0 0 600px #0150b4,
+        0 0 700px #0150b4,
+        0 0 800px #0150b4,
+        0 0 900px #0150b4,
+        0 0 1000px #0150b4;
+    }
+}
+
+
+.planet-1 {
+    transform: translateX(0px);
+    animation-name: planet-1-anim-1;
+    animation-duration: 0.7s;
+    animation-delay: .55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes planet-1-anim-1 {
+    70% {
+        transform: translateX(40%); 
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+
+.planet-1 .black-circle {
+    animation-name: planet-1-anim-2;
+    animation-duration: 1s;
+    animation-delay: .55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes planet-1-anim-2 {
+    70% {
+        transform: translateX(40%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+
+.planet-2 {
+    transform: translateX(-2rem) translateY(2rem);
+    animation-name: planet-2-anim-1;
+    animation-duration: 0.7s;
+    animation-delay: .55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes planet-2-anim-1 {
+    70% {
+        transform: translateX(-7rem) translateY(7rem); 
+    }
+    to {
+        transform: translateX(-10rem) translateY(10rem);
+    }
+}
+
+
+.planet-2 .black-circle {
+    animation-name: planet-2-anim-2;
+    animation-duration: 1s;
+    animation-delay: .55s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes planet-2-anim-2 {
+    70% {
+        transform: translateX(-20%) translateY(20%);
+    }
+    to {
+        transform: translateX(-100%) translateY(100%);
+    }
+}
+
+
+
+.fadein-right-anim {
+    opacity: 0;
+    transform: translateX(var(--trx));
+    animation-name: fadein-right-anim-1;
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein-right-anim-1{
+    to {
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+
+.fadein-bottom-anim {
+    opacity: 0;
+    transform: translateY(var(--try));
+    animation-name: fadein-right-anim-1;
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein-bottom-anim-1{
+    to {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
