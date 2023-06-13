@@ -4,6 +4,7 @@
 
 * {
     @apply text-[11px] xl:text-[13px] 2xl:text-[15px];
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -11,6 +12,8 @@
     --oxford-blue: #0A1A39ff;
     --risd-blue: #4046FFff;
     --electric-indigo: #6133FFff;
+
+    --initial-animation-delay: 10s;
 }
 
 
@@ -34,7 +37,7 @@
 
 
 .bg-anim {
-    animation:bg-anim-1 0.9s 1s linear;
+    animation:bg-anim-1 0.9s calc(var(--initial-animation-delay) + 1s) linear;
     animation-fill-mode: forwards;
 }
 
@@ -51,7 +54,7 @@
     box-shadow: 0 0 20px #4b77b3,
     0 0 40px #b3904b,
     0 0 70px #4b77b3;
-    animation: planet-1-boxshadow-anim 1s 1s ease-in-out 1;
+    animation: planet-1-boxshadow-anim 1s calc(var(--initial-animation-delay) + 1s) ease-in-out 1;
     animation-fill-mode: forwards;
 }
 
@@ -79,7 +82,7 @@
     transform: translateX(0px);
     animation-name: planet-1-anim-1;
     animation-duration: 0.7s;
-    animation-delay: .55s;
+    animation-delay: calc(var(--initial-animation-delay) + 0.55s);
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -97,7 +100,7 @@
 .planet-1 .black-circle {
     animation-name: planet-1-anim-2;
     animation-duration: 1s;
-    animation-delay: .55s;
+    animation-delay: calc(var(--initial-animation-delay) + 0.55s);
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -119,7 +122,7 @@
     transform: translateX(-2rem) translateY(2rem);
     animation-name: planet-2-anim-1;
     animation-duration: 0.7s;
-    animation-delay: .55s;
+    animation-delay: calc(var(--initial-animation-delay) + 0.55s);
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -137,7 +140,7 @@
 .planet-2 .black-circle {
     animation-name: planet-2-anim-2;
     animation-duration: 1s;
-    animation-delay: .55s;
+    animation-delay: calc(var(--initial-animation-delay) + 0.55s);
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -152,12 +155,36 @@
 
 
 
+
+.simply-section:nth-child(1) {
+    --delay: calc(var(--initial-animation-delay) + 1.5s);
+    --duration: 1s;
+}
+.simply-section:nth-child(2) {
+    --delay: calc(var(--initial-animation-delay) + 1.7s);
+    --duration: 1s;
+}
+.simply-section:nth-child(3) {
+    --delay: calc(var(--initial-animation-delay) + 1.9s);
+    --duration: 1s;
+}
+.simply-section {
+    opacity: 0;
+    transform: translateX(6rem);
+    animation-name: fadein-right-anim-1;
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;    
+}
+
 .fadein-right-anim {
     opacity: 0;
     transform: translateX(var(--trx));
     animation-name: fadein-right-anim-1;
     animation-duration: var(--duration);
-    animation-delay: var(--delay);
+    animation-delay: calc(var(--initial-animation-delay) + var(--delay));
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -176,7 +203,7 @@
     transform: translateY(var(--try));
     animation-name: fadein-right-anim-1;
     animation-duration: var(--duration);
-    animation-delay: var(--delay);
+    animation-delay: calc(var(--initial-animation-delay) + var(--delay));
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -187,4 +214,22 @@
         transform: translateY(0rem);
         opacity: 1;
     }
+}
+
+
+
+.simply-countdown > .simply-section > div {
+    @apply py-4 px-5 rounded-2xl border border-gray-500 bg-white/5 flex flex-row items-center justify-center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    @apply text-white/90 tracking-wide text-lg font-[agudaBlack] leading-none w-12;
+}
+
+.simply-countdown > .simply-section .simply-word {
+    @apply font-[agudaBold] text-base text-white/60 leading-none uppercase flex-1;
+}
+
+.simply-seconds-section {
+    @apply hidden;
 }

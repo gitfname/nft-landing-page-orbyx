@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/icons/favicon-16x16.png">
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="w-full min-h-screen bg-gradient-to-bl from-[--federal-blue] to-[--oxford-blue] pb-10">
+<body class="w-full min-h-screen bg-gradient-to-bl from-[--federal-blue] to-[--oxford-blue] pb-4">
 
     <div class="absolute top-10 left-1/2 w-44 h-44 bg-purple-500/50 rounded-full -z-10 blur-3xl"></div>
     <!-- <div class="absolute bottom-0 right-0 w-1/2 h-full -z-10 border overflow-hidden">
@@ -30,7 +33,7 @@
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[90%] h-[90%] -z-10 rounded-full bg-[rgb(22,57,116)] blur-md"></div>
         </div>
 
-        <div class="absolute -top-24 lg:bottom-24 right-0 w-[24rem] h-[24rem] z-10 planet-1">
+        <div class="absolute max-md:-top-24 lg:bottom-24 right-0 w-[24rem] h-[24rem] z-10 planet-1">
             <img
                 alt=""
                 src="./public/images/planet-3-removebg-preview.png"
@@ -42,38 +45,42 @@
     </div>
 
     <!-- stars -->
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-24 left-96"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-28 right-96"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-56 left-44"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 bottom-24 left-44"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-72 right-72"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-96 right-20"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 bottom-32 right-52"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 top-[28rem] left-[10rem]"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 bottom-[20rem] right-[22rem]"></div>
-    <div class="w-1 h-1 rounded-xl bg-white blur-[0.7px] absolute -z-20 bottom-[48rem] right-[33rem]"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-24 left-96"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-28 right-96"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-56 left-44"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 bottom-24 left-44"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-72 right-72"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-96 right-20"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 bottom-32 right-52"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 top-[28rem] left-[10rem]"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 bottom-[20rem] right-[22rem]"></div>
+    <div class="w-1 h-1 rounded-xl bg-gray-50 blur-[0.7px] absolute -z-20 bottom-[48rem] right-[33rem]"></div>
 
-    <div class="p-6 text-white text-2xl font-[agudaBold] tracking-widee">
-        Orbyx&nbsp;
-        <p class="text-[0.72rem] font-[agudaBlack] leading-none inline-block
+    <div
+        style="--delay: 0.6s; --duration: 1s; --trx: 4rem;"
+        class="fadein-right-anim w-max p-6 text-white text-3xl font-[agudaBold] tracking-widee title"
+    >
+        <!-- <p class="text-[0.72rem] font-[agudaBlack] leading-none inline-block
         text-white/50 bg-transparent border border-white/50 rounded-lg py-1 px-1.5 hover:text-white/80 hover:border-white/80
         transition-colors duration-200">
             beta
-        </p>
+        </p> -->
     </div>
 
-    <div class="pt-14 w-full overflow-hidden px-4">
+    <div class="pt-10 w-full overflow-hidden px-4">
         
         <p
             style="--duration: 1s; --delay: 1s; --trx: 8rem;"
-            class="text-center text-7xl text-white font-[agudaBlack] tracking-wide w-max mx-auto fadein-right-anim"
+            class="text-center text-6xl md:text-7xl text-white font-[agudaBlack] tracking-wide w-max mx-auto fadein-right-anim"
         >
             Coming Soon
         </p>
 
-        <div class="mt-10 flex items-center gap-x-6 justify-center w-full">
+        <div class="mt-10">
+
+            <div id="test" class="simply-countdown text-white w-full justify-center mt-10 flex items-center gap-x-3 md:gap-x-6"></div>
             
-            <div
+            <!-- <div
                 style="--duration: 0.8s; --delay: 1.4s; --trx: 5rem;"
                 class="fadein-right-anim py-3.5 px-5 rounded-2xl border border-gray-500 grid place-items-center bg-white/5"
             >
@@ -106,31 +113,33 @@
                 <p class=" text-white/90 tracking-wide text-lg font-[agudaBlack] leading-none">
                     34 <span class="font-[agudaBold] text-base text-white/60 leading-none">MINUTES</span>
                 </p>
-            </div>
+            </div> -->
 
         </div>
 
         <p
             style="--duration: 0.8s; --delay: 1.8s; --trx: -4rem;"
-            class="fadein-right-anim mt-12 text-center text-white/90 tracking-wide text-sm font-[agudaBold]"
+            class="fadein-right-anim mt-12 text-center text-white/90 tracking-wide text-base font-[agudaBold]"
         >
             Get notified when site goes live :
         </p>
 
-        <div class="mt-6 flex items-center gap-x-6 w-full justify-center">
+        <div
+            style="--duration: 0.8s; --delay: 2s; --trx: -4rem;"
+            class="fadein-right-anim mt-6 flex items-center gap-x-6 w-full justify-center"
+        >
 
             <input
                 type="email"
                 placeholder="Enter your email..."
-                style="--duration: 0.8s; --delay: 2s; --trx: -5rem;"
-                class="fadein-right-anim p-3 pl-4 w-full max-w-[18rem] focus-within:border-white/30 transition-colors duration-200
-                outline-nones focus-within:outline-none text-sm tracking-wide border border-gray-500 rounded-2xl
+                class="p-3 pl-4 w-full max-w-[18rem] focus-within:border-white/30 transition-colors duration-200
+                outline-nones focus-within:outline-none text-base tracking-wide border border-gray-500 rounded-2xl
                 text-white placeholder-white/60 bg-white/5"
             />
 
             <button
-                style="--duration: 0.8s; --delay: 2s; --trx: 5rem;"
-                class="fadein-right-anim text-white text-sm tracking-wide font-semibold rounded-2xl outline-none focus-within:outline-none border-none bg-gradient-to-r
+                class="text-white text-base tracking-wide font-semibold rounded-2xl
+                outline-none focus-within:outline-none border-none bg-gradient-to-r inline-block
                 from-[--risd-blue] to-[--electric-indigo] self-stretch px-6 active:scale-95 transition-transform duration-200"
             >
                 Subscribe
@@ -145,53 +154,76 @@
             If you have any question, please contact us at :
         </p>
 
-        <p
+        <a
             style="--duration: 0.8s; --delay: 2.4s; --try: 2.5rem;"
-            class="fadein-bottom-anim mt-2 text-lg font-medium text-center tracking-wide text-cyan-500/90"
+            class="fadein-bottom-anim mt-2 text-lg font-medium text-center tracking-wide text-cyan-500/90 block w-max mx-auto"
+            id="contact-us-mail"
         >
-           contact@orbyx.com
-        </p>
+        <!-- Contact Us Mail -->
+        </a>
 
         <div
             style="--duration: 0.8s; --delay: 2.6s; --try: 2.5rem;"
             class="fadein-bottom-anim mt-14 flex items-center gap-x-4 justify-center w-full"
+            id="social-links"
         >
-            
-            <a href="#">
-                <img
-                    alt=""
-                    src="./public/icons/icons8-twitter.svg"
-                    class="max-md:w-8 max-md:h-8 w-6 h-6 object-center object-cover opacity-60 transition-opacity duration-200 hover:opacity-90"
-                />
-            </a>
-
-            <a href="#">
-                <img
-                    alt=""
-                    src="./public/icons/icons8-telegram-50.png"
-                    class="max-md:w-8 max-md:h-8 w-6 h-6 object-center object-cover opacity-60 transition-opacity duration-200 hover:opacity-90"
-                />
-            </a>
-
-            <a href="#">
-                <img
-                    alt=""
-                    src="./public/icons/icons8-instagram-50.png"
-                    class="max-md:w-8 max-md:h-8 w-6 h-6 object-center object-cover opacity-60 transition-opacity duration-200 hover:opacity-90"
-                />
-            </a>
-
+        <!-- Social Links -->
         </div>
 
         <p
             style="--duration: 0.8s; --delay: 2.5s; --try: 2.5rem;"
             class="fadein-bottom-anim mt-10 text-sm font-medium text-center tracking-wide text-white/60"
         >
-            2023 Orbyx, All rights reserved.
+            2023 <span class="title"></span>, All rights reserved.
         </p>
-
     </div>
 
+    <script src="lib/simplyCountdown.min.js"></script>
+    <script>
+
+        function makeSocialLink(img, link) {
+            return `
+                <a href="${link}">
+                    <img
+                        alt="${link} link"
+                        src="${img}"
+                        class="max-md:w-8 max-md:h-8 w-7 h-7 object-center object-cover opacity-60 transition-opacity duration-200 hover:opacity-90"
+                    />
+                </a>
+            `
+        }
+
+        async function main() {
+            const applicationData = await (await fetch("./public/db.json")).json()
+
+            document.title = applicationData?.title.toUpperCase()
+
+            const elem = document.getElementById("test")
+            simplyCountdown(
+                elem,
+                {
+                    year: applicationData?.date?.year,
+                    month: applicationData?.date?.month,
+                    day: applicationData?.date?.day
+                }
+            )
+
+            applicationData?.socialLinks?.map(item => {
+                document.getElementById("social-links").innerHTML += makeSocialLink(item.img, item.link)
+            })
+
+            document.getElementById("contact-us-mail").innerText = applicationData?.email
+            document.getElementById("contact-us-mail").setAttribute("href", "mailto:"+applicationData?.email)
+
+            document.querySelectorAll(".title").forEach(function(element) {
+                element.innerText = applicationData?.title
+            })
+
+            document.documentElement.style.setProperty("--initial-animation-delay", "0.4s")
+        }
+
+        main()
+    </script>
 </body>
 
 </html>

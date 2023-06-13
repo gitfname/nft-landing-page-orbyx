@@ -1,0 +1,23 @@
+{
+    "title": "orbyx",
+    "date": {
+        "year": 2023,
+        "month": 8,
+        "day": 21
+    },
+    "email": "contact@orbyx.com",
+    "socialLinks": [
+        {
+            "img": "./public/icons/icons8-website-64.png",
+            "link": "https://website.com"
+        },
+        {
+            "img": "./public/icons/icons8-telegram-50.png",
+            "link": "https://telegram.com"
+        },
+        {
+            "img": "./public/icons/icons8-instagram-50.png",
+            "link": "https://instagram.com"
+        }
+    ]
+}
